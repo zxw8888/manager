@@ -28,6 +28,13 @@ public class UserController {
         System.out.println(userService.findAllUser());
         return userService.findAllUser();
     }
+    @RequestMapping("del")
+    @ResponseBody
+    public String delUser(String id) {
+        int a =  userService.delUser(id);
+
+        return a>0?"删除成功":"删除失败";
+    }
 
     @RequestMapping("hello")
     public String hello() {

@@ -44,4 +44,8 @@ public class UserService {
     public void  addUser(Users users){
        mapper.addUser(users);
     }
+
+    public int delUser(String id) {
+       return  mapper.delUser(id);
+    }
 }

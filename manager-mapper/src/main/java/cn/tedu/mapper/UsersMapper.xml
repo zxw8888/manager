@@ -15,4 +15,9 @@
     <insert id="addUser">
         insert into users (username, userage) values (#{username},#{userAge})
     </insert>
+    <delete id="delUser" parameterType="java.lang.String">
+
+        delete form users where id=#{id}
+
+    </delete>
 </mapper>

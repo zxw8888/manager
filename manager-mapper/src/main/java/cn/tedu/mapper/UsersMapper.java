@@ -31,4 +31,6 @@ public interface  UsersMapper {
       */
 
      void addUser(Users users);
+
+    int delUser(String id);
 }

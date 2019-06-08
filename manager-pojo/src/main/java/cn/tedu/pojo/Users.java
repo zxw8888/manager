@@ -1,7 +1,7 @@
 package cn.tedu.pojo;
 
 /**
- * @Auther: panda
+ * @author : panda
  * @Date: 2019/5/14
  * @Descripton: cn.tedu
  * @version: 1.0
