@@ -5,6 +5,10 @@ import cn.tedu.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.List;
+
 /**
  * @Auther: panda
  * @Date: 2019/5/14
@@ -18,9 +22,11 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping("findAll")
-    public void findAllUser() {
+    @ResponseBody
+    public List<Users> findAllUser() {
         System.out.println("findAll");
         System.out.println(userService.findAllUser());
+        return userService.findAllUser();
     }
 
     @RequestMapping("hello")
@@ -32,7 +38,7 @@ public class UserController {
     @RequestMapping("addUser")
     public String hello(Users users) {
         System.out.println("555555");
-               try {
+        try {
             userService.addUser(users);
             System.out.println(users);
             return "ok";
