@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 /**
- * @Auther: panda
+ * @author: panda
  * @Date: 2019/5/14
  * @Descripton: cn.tedu.controller
  * @version: 1.0
@@ -18,6 +18,7 @@ import java.util.List;
 @Controller
 @RequestMapping("user")
 public class UserController {
+
     @Autowired
     private UserService userService;
 
